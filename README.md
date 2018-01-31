@@ -20,7 +20,7 @@ There are base templates to deal with the fundamental requirements.  These inclu
 See [The AMP Project](https://www.ampproject.org/) for more information about what you can and can't do in an AMP page
 
 The controller which handles the AMP pages forcibly removes any scripts, CSS, etc. added via `Requirements` to the parent page.  This is due to the strict limitations on what can be included in AMP.
-There is a base page template called `Amp.ss` and additional page types can be templated by adding a file called `ClassName_amp.ss` to your theme.
+There is a base page template called `Amp.ss` and additional page types can be templated by adding a file called `ClassName_amp.ss` to your theme in the same directory as the non-AMP template.
 
 In line with the AMP recommendations, CSS should be minified and included inline in the page.  To make managing the CSS via tools such as SASS a little simpler, there's a helper method that can be called in a template:  `$getAmpStyles(cssfilename)`.  This will include the contents of the named CSS file (from your theme's CSS directory) and put them inline for you.
 

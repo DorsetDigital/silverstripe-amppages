@@ -9,9 +9,6 @@ class AmpPagesControllerExtension extends Extension
 {
 
     private static $allowed_actions = ['amp'];
-    private static $url_handlers = [
-        'amp.html' => 'amp'
-    ];
 
     public function amp()
     {
