@@ -5,6 +5,7 @@ use SilverStripe\CMS\Model\SiteTreeExtension;
 use SilverStripe\View\ThemeResourceLoader;
 use SilverStripe\View\SSViewer;
 use SilverStripe\ORM\FieldType\DBField;
+use SilverStripe\View\HTML;
 
 class AmpPagesSiteTreeExtension extends SiteTreeExtension
 {
@@ -12,7 +13,11 @@ class AmpPagesSiteTreeExtension extends SiteTreeExtension
     public function MetaTags(&$tags)
     {
         $ampLink = $this->owner->AbsoluteLink() . "amp.html";
-        $tags .= "\n<link rel='amphtml' href='$ampLink' />\n";
+        $atts = [
+            'rel' => 'amphtml',
+            'href' => $ampLink
+        ];
+        $tags .= HTML::createTag('link', $atts);
     }
 
     public function getAmpStyles($cssFile)
