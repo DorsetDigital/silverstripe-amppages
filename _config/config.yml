@@ -1,0 +1,10 @@
+---
+Name: 'amp-pages'
+---
+SilverStripe\CMS\Model\SiteTree:
+  extensions:
+    - DorsetDigital\SilverStripeAmpPages\AmpPagesSiteTreeExtension
+    
+SilverStripe\CMS\Controllers\ContentController:
+  extensions:
+    - DorsetDigital\SilverStripeAmpPages\AmpPagesControllerExtension

@@ -1,0 +1,7 @@
+---
+Name: amp-pages-routes
+After: framework/routes#coreroutes
+---
+SilverStripe\Controler\Director:
+  rules:
+   'amp.html': 'DorsetDigital\SilverStripeAmpPages\AmpPagesControllerExtension'
