@@ -37,11 +37,11 @@ class ExamplePageController extends \PageController
 The above would automatically find a CSS file called `amp.css` in your theme's CSS directory and add the contents inline in the correct `<style amp-custom>` tag.   Additional style sheets can be added by calling the `ampCSS()` method again, they will be appended.   (Just remember, there's a size limit on the amount of CSS in AMP)
 
 
-#Useful Links
+# Useful Links
 See [The AMP Project](https://www.ampproject.org/) for more information about what you can and can't do in an AMP page
 
 
-#Credits
+# Credits
 Very much inspired by [Silverstripe AMP HTML for SS3](https://github.com/thezenmonkey/silverstripe-amp)
 Silverstripe Slack users for their patient assistance [Slack channel signup](https://www.silverstripe.org/community/slack-signup/)
 As always, thanks to the core team for all their hard work.  
