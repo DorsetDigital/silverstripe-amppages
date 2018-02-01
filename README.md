@@ -42,6 +42,6 @@ See [The AMP Project](https://www.ampproject.org/) for more information about wh
 
 
 # Credits
-Very much inspired by [Silverstripe AMP HTML for SS3](https://github.com/thezenmonkey/silverstripe-amp)
-Silverstripe Slack users for their patient assistance [Slack channel signup](https://www.silverstripe.org/community/slack-signup/)
-As always, thanks to the core team for all their hard work.  
+* Very much inspired by [Silverstripe AMP HTML for SS3](https://github.com/thezenmonkey/silverstripe-amp)
+* Thanks to the Silverstripe Slack users for their patient assistance [Slack channel signup](https://www.silverstripe.org/community/slack-signup/)
+* As always, thanks to the core team for all their hard work.  
