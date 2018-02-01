@@ -2,9 +2,6 @@
 namespace DorsetDigital\SilverStripeAmpPages;
 
 use SilverStripe\CMS\Model\SiteTreeExtension;
-use SilverStripe\View\ThemeResourceLoader;
-use SilverStripe\View\SSViewer;
-use SilverStripe\ORM\FieldType\DBField;
 use SilverStripe\View\HTML;
 
 class AmpPagesSiteTreeExtension extends SiteTreeExtension
@@ -17,17 +14,6 @@ class AmpPagesSiteTreeExtension extends SiteTreeExtension
             'rel' => 'amphtml',
             'href' => $ampLink
         ];
-        $tags .= HTML::createTag('link', $atts);
-    }
-
-    public function getAmpStyles($cssFile)
-    {
-        $css = null;
-        $themeCSSPath = ThemeResourceLoader::inst()->findThemedCSS($cssFile, SSViewer::get_themes());
-        $fullCSSPath = BASE_PATH . DIRECTORY_SEPARATOR . $themeCSSPath;
-        if (is_file($fullCSSPath)) {
-            $css .= file_get_contents($fullCSSPath);
-        }
-        return DBField::create_field('HTMLFragment', $css);
+        $tags .= "\n" . HTML::createTag('link', $atts) . "\n";
     }
 }
