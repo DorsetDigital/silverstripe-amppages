@@ -8,3 +8,8 @@ SilverStripe\CMS\Model\SiteTree:
 SilverStripe\CMS\Controllers\ContentController:
   extensions:
     - DorsetDigital\SilverStripeAmpPages\AmpPagesControllerExtension
+    
+SilverStripe\View\Requirements:
+  extensions:
+    - DorsetDigital\SilverStripeAmpPages\AmpPagesRequirementsExtension
+    
