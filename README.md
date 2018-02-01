@@ -1,6 +1,5 @@
 # silverstripe-amppages
-Adds semi-automated AMP page functionality to Silverstripe
-This add-on provides some basic assistance in creating AMP pages in Silverstripe 4
+Adds semi-automated AMP page functionality and provides some basic assistance in creating AMP pages in Silverstripe 4.
 
 # Requirements
 *Silverstripe 4.0.x
