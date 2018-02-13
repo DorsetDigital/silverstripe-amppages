@@ -9,11 +9,11 @@ class AmpPagesSiteTreeExtension extends SiteTreeExtension
 
     public function MetaTags(&$tags)
     {
-        $ampLink = $this->owner->AbsoluteLink() . "amp.html";
+        $ampLink = $this->owner->AbsoluteLink()."amp.html";
         $atts = [
             'rel' => 'amphtml',
             'href' => $ampLink
         ];
-        $tags .= "\n" . HTML::createTag('link', $atts) . "\n";
+        $tags .= "\n".HTML::createTag('link', $atts)."\n";
     }
 }

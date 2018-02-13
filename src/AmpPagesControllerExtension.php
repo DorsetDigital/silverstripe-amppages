@@ -16,7 +16,7 @@ class AmpPagesControllerExtension extends Extension
         $this->addAmpStyles();
         $controller = Controller::curr();
         $class = $controller->ClassName;
-        return $this->owner->renderWith([$class . "_amp", "Amp"]);
+        return $this->owner->renderWith([$class."_amp", "Amp"]);
     }
 
     private function addAmpStyles()
@@ -24,12 +24,12 @@ class AmpPagesControllerExtension extends Extension
         $css = null;
         $cssFiles = AmpPagesRequirementsExtension::getAmpCSSFiles();
         foreach ($cssFiles as $themeCSSPath) {
-            $fullCSSPath = BASE_PATH . DIRECTORY_SEPARATOR . $themeCSSPath;
+            $fullCSSPath = BASE_PATH.DIRECTORY_SEPARATOR.$themeCSSPath;
             if (is_file($fullCSSPath)) {
                 $css .= file_get_contents($fullCSSPath);
             }
         }
-        $tag = '<style amp-custom>' . $css . '</style>';
+        $tag = '<style amp-custom>'.$css.'</style>';
         Requirements::insertHeadTags($tag);
     }
 }
