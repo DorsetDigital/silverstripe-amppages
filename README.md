@@ -1,6 +1,11 @@
 # silverstripe-amppages
 Adds semi-automated AMP page functionality and provides some basic assistance in creating AMP pages in Silverstripe 4.
 
+[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/DorsetDigital/silverstripe-amppages/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/DorsetDigital/silverstripe-amppages/?branch=master)
+[![Build Status](https://scrutinizer-ci.com/g/DorsetDigital/silverstripe-amppages/badges/build.png?b=master)](https://scrutinizer-ci.com/g/DorsetDigital/silverstripe-amppages/build-status/master)
+[![License](https://img.shields.io/badge/License-BSD%203--Clause-blue.svg)](LICENSE.md)
+[![Version](http://img.shields.io/packagist/v/dorsetdigital/silverstripe-amppages.svg?style=flat)](https://packagist.org/packages/dorsetdigital/silverstripe-amppages)
+
 # Requirements
 *Silverstripe 4.0.x
 
